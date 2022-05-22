@@ -1,0 +1,65 @@
+body {
+  background: green;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  background-color: antiquewhite;
+}
+.row {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.news {
+  width: 30%;
+}
+
+img {
+  width: 300px;
+  height: 300px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  background-color: gray;
+  padding: 10px;
+}
+
+ul li {
+  cursor: pointer;
+  color: white;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+@media screen and (max-width: 750px) {
+  .news {
+    width: 100%;
+  }
+  img {
+    width: 100%;
+  }
+  ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  ul li {
+    padding: 7px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 751px) and (max-width: 1200px) {
+  .news {
+    width: 50%;
+  }
+}
